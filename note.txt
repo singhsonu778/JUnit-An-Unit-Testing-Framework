@@ -1,0 +1,11 @@
+Commit 2:
+To compile the java file open command prompt to src directory of project,
+i.e \JUnit-An-Unit-Testing-Framework\src
+
+Run following command to compile the java files into class files,
+javac -cp .;..\lib\junit-4.12.jar JunitTest.java
+
+Run following command to run the test cases,
+java -cp .;..\lib\junit-4.12.jar;..\lib\hamcrest-core-1.3.jar org.junit.runner.JUnitCore JunitTest
+
+Here, we are using built-in test runner JUnitCore to run the test cases by specifying the name of the java class file containing the test cases.
