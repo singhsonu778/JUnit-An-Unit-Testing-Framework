@@ -17,3 +17,11 @@ javac -cp .;..\lib\junit-4.12.jar *.java
 Run following command to run the test cases,
 java -cp .;..\lib\junit-4.12.jar;..\lib\hamcrest-core-1.3.jar org.junit.runner.JUnitCore JunitTest JunitTest1
 ------------------------------------------------------------------------------------------------------------------------------------------------
+Commit 4:
+To compile multiple java files into class files run following command,
+javac -cp .;..\lib\junit-4.12.jar *.java
+
+Run following command to run the test runner filee,
+java -cp .;..\lib\junit-4.12.jar;..\lib\hamcrest-core-1.3.jar JunitTestRunner
+Here, we are using built-in test runner JUnitCore programatically instead of using it from Console to run the test cases.
+------------------------------------------------------------------------------------------------------------------------------------------------
