@@ -6,19 +6,17 @@ import java.util.Collection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class JunitTest {
 
-	private int input;
-	private boolean output;
+	@Parameter //(value = 0) by default
+	public int input;
+	@Parameter(value = 1)
+	public boolean output;
 	private EvenOddChecker evenOddChecker = new EvenOddChecker();
-
-	public JunitTest(int input, boolean output) {
-		this.input = input;
-		this.output = output;
-	}
 
 	@Parameters
 	public static Collection numbers() {
