@@ -8,7 +8,6 @@ public class JunitTestRunner {
 		for (Failure failure : result.getFailures()) {
 			System.out.println(failure.toString());
 		}
-		System.out.println("Test status (All test passed ?) : "
-				+ result.wasSuccessful());
+		System.out.println("Test status (All test passed ?) : " + result.wasSuccessful());
 	}
 }
