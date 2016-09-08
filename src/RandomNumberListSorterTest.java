@@ -4,15 +4,18 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 public class RandomNumberListSorterTest {
 	RandomNumberListSorter listSorter;
+	@Mock
 	RandomNumberListGenerator listGenerator;
 
 	@Before
 	public void setUp() {
-		listGenerator = Mockito.mock(RandomNumberListGenerator.class);
+		MockitoAnnotations.initMocks(this);
 		listSorter = new RandomNumberListSorter(listGenerator);
 	}
 
