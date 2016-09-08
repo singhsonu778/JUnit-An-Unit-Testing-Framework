@@ -3,19 +3,17 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnit;
-import org.mockito.junit.MockitoRule;
+import org.mockito.runners.MockitoJUnitRunner;
 
+@RunWith(MockitoJUnitRunner.class)
 public class RandomNumberListSorterTest {
 	RandomNumberListSorter listSorter;
 	@Mock
 	RandomNumberListGenerator listGenerator;
-	@Rule
-	public MockitoRule mockitoRule = MockitoJUnit.rule();
 
 	@Before
 	public void setUp() {
